@@ -17,5 +17,8 @@
   <button (click)="share()">Share</button>
 
   <!-- 8. To display ProductAlertsComponent as a child of ProductListComponent -->
-  <app-product-alerts [product]="product"></app-product-alerts>
+  <app-product-alerts
+    [product]="product"
+    (notify)="onNotify()"
+  ></app-product-alerts>
 </div>
