@@ -1,7 +1,8 @@
 <h2>Products</h2>
 
-<!-- With *ngFor, the <div> repeats for each product in the list -->
+<!-- 1. 2. With *ngFor, the <div> repeats for each product in the list -->
 <div *ngFor="let product of products">
+  <!-- 3. It refers to attribute name of product from products dict in products.ts file -->
   <h3>
     {{ product.name }}
   </h3>
