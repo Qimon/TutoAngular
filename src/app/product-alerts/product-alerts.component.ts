@@ -8,8 +8,8 @@ import { Product } from '../products';
 })
 export class ProductAlertsComponent implements OnInit {
   // 5. The @Input() decorator indicates that the property value passes in from the component's parent, ProductListComponent
-  // @Input() product!: Product;
-  @Input() product: Product | undefined;
+  @Input() product!: Product;
+  // @Input() product: Product | undefined;
   // 2. The @Output() decorator allows the ProductAlertsComponent to emit an event when the value of the notify property changes
   @Output() notify = new EventEmitter();
 
