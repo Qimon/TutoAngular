@@ -11,8 +11,8 @@
   </h3>
 
   <!-- 6. ngIf from angular create description only if attribute exists -->
-  <p *ngIf="product.description">
-    Description: {{ product.description }}
-  </p>
+  <p *ngIf="product.description">Description: {{ product.description }}</p>
 
+  <!-- 7. Share Button is created foreach phone (because button is in div *ngFor)-->
+  <button (click)="share()">Share</button>
 </div>
