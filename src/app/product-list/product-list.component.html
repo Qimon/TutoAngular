@@ -1,9 +1,18 @@
 <h2>Products</h2>
 
-<!-- 1. 2. With *ngFor, the <div> repeats for each product in the list -->
+<!-- 1. With *ngFor, the <div> repeats for each product in the list -->
 <div *ngFor="let product of products">
   <!-- 3. It refers to attribute name of product from products dict in products.ts file -->
   <h3>
-    {{ product.name }}
+    <!-- 5. <a> match to the anchor when mouse overpass product Name h3 -->
+    <a [title]="product.name + ' details'">
+      {{ product.name }}
+    </a>
   </h3>
+
+  <!-- 6. ngIf from angular create description only if attribute exists -->
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
 </div>
