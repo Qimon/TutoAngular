@@ -1,6 +1,5 @@
-> The product-alerts folder with all component (html, css & ts) were created by the following command : 
+> The product-alerts folder with all component (html, css & ts) were created by running the following command :
 
-
-````angular
+```angular
 ng generate component product-alerts
-````
+```
