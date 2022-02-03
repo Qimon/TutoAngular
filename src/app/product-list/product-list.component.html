@@ -15,4 +15,7 @@
 
   <!-- 7. Share Button is created foreach phone (because button is in div *ngFor)-->
   <button (click)="share()">Share</button>
+
+  <!-- 8. To display ProductAlertsComponent as a child of ProductListComponent -->
+  <app-product-alerts [product]="product"> </app-product-alerts>
 </div>

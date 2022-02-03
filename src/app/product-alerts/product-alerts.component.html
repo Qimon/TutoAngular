@@ -1,1 +1,5 @@
-<p>product-alerts works!</p>
+<!-- 6. Open product-alerts.component.html and replace the placeholder paragraph with a Notify Me button that appears if the product price is over $700 -->
+
+<p *ngIf="product && product.price > 700">
+  <button>Notify Me</button>
+</p>
